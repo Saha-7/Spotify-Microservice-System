@@ -17,3 +17,19 @@
     - `"build": "tsc"` 👉 Compiles all TypeScript (.ts) files into JavaScript inside the dist folder.
     - `"start": "node dist/index.js"` 👉 Runs the compiled JavaScript app from the dist folder in production.
     - `"dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\""` 👉 Runs TypeScript compiler in watch mode AND restarts the server automatically whenever files change.
+
+
+
+
+## 2. admin-service
+
+### 📌 Project Setup Summary
+
+- Same tsconfig.json configuration.
+
+- Install dependencies & their TypeScript type definitions:
+    - `npm i express dotenv @types/express @types/dotenv cloudinary`
+    - `npm i -D nodemon typescript concurrently`
+    - `npm i @neondatabase/serverless` - to use neon Postgressql
+
+- 
