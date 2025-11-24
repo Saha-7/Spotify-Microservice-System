@@ -32,4 +32,8 @@
     - `npm i -D nodemon typescript concurrently`
     - `npm i @neondatabase/serverless` - to use neon Postgressql
     - `npm i multer axios datauri`
-- 
+    - `npm i @types/multer`
+
+
+- Follow the same setup in your `.env` file similar to `.env.example` file in admin-service. [` PORT, DB_URL, CLOUDINARY-SECRETS` ]
+
