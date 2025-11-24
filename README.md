@@ -31,5 +31,5 @@
     - `npm i express dotenv @types/express @types/dotenv cloudinary`
     - `npm i -D nodemon typescript concurrently`
     - `npm i @neondatabase/serverless` - to use neon Postgressql
-
+    - `npm i multer axios datauri`
 - 
