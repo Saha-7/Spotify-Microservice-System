@@ -17,6 +17,7 @@
     "@neondatabase/serverless": "^1.0.2",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.5",
+    "@types/multer": "^2.0.0",
     "axios": "^1.13.2",
     "cloudinary": "^2.8.0",
     "cors": "^2.8.5",
