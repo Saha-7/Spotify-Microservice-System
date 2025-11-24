@@ -31,5 +31,24 @@
     - `npm i express dotenv @types/express @types/dotenv cloudinary`
     - `npm i -D nodemon typescript concurrently`
     - `npm i @neondatabase/serverless` - to use neon Postgressql
+    - `npm i multer axios datauri`
+    - `npm i @types/multer`
 
-- 
+
+- Follow the same setup in your `.env` file similar to `.env.example` file in admin-service. [` PORT, DB_URL, CLOUDINARY-SECRETS` ]
+
+
+
+
+
+
+## 3. song-service
+
+### 📌 Project Setup Summary
+
+- Same tsconfig.json configuration.
+
+- Install dependencies & their TypeScript type definitions:
+    - `npm i express dotenv @types/express @types/dotenv`
+    - `npm i @neondatabase/serverless` - to use neon Postgressql
+    - `npm i -D nodemon typescript concurrently`
