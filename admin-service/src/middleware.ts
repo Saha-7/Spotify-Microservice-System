@@ -20,7 +20,7 @@ interface AuthenticatedRequest extends Request{
 }
 
 
-export const isAuth = async(req:AuthenticatedRequest, res:Response, NextFunction): Promise<void> =>{
+export const isAuth = async(req:AuthenticatedRequest, res:Response, next:NextFunction): Promise<void> =>{
     try{
         const token = req.headers.token as string
         if(!token){
@@ -35,10 +35,23 @@ export const isAuth = async(req:AuthenticatedRequest, res:Response, NextFunction
         })
 
         req.user = data
-
+        next()
     }catch(error){
         res.status(403).json({
             message: "Please Login",
         })
     }
 }
+
+
+
+
+
+// Multer setup
+import multer from 'multer'
+
+const storage = multer.memoryStorage()
+
+const uploadFile = multer({storage}).single("file")
+
+export default uploadFile
