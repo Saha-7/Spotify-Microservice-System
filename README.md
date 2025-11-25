@@ -38,6 +38,12 @@
 - Follow the same setup in your `.env` file similar to `.env.example` file in admin-service. [` PORT, DB_URL, CLOUDINARY-SECRETS` ]
 
 
+-   Redis setup:
+    -   `npm i redis @types/redis`
+    -   Follow the Redis config on `index.ts` file
+    -   Set your `.env file` exactly similar to `.env.example` file.
+
+
 
 
 
@@ -54,5 +60,6 @@
     - `npm i -D nodemon typescript concurrently`
 
 -   Redis setup:
-    - `npm i redis @types/redis`
-    - Follow the Redis config on `index.ts` file & set your .env file
+    -   `npm i redis @types/redis`
+    -   Follow the Redis config on `index.ts` file
+    -   Set your `.env file` exactly similar to `.env.example` file.
