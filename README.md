@@ -52,3 +52,7 @@
     - `npm i express dotenv @types/express @types/dotenv`
     - `npm i @neondatabase/serverless` - to use neon Postgressql
     - `npm i -D nodemon typescript concurrently`
+
+-   Redis setup:
+    - `npm i redis @types/redis`
+    - Follow the Redis config on `index.ts` file & set your .env file

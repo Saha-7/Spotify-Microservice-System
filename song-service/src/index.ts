@@ -1,8 +1,23 @@
 import express from "express"
 import dotenv from "dotenv"
 import songRoutes from "./route.js"
+import redis from "redis"
+
 
 dotenv.config()
+
+export const redisClient = redis.createClient({
+    password: process.env.REDIS_PASSWORD,
+    socket: {
+        host: 'redis-14399.crce217.ap-south-1-1.ec2.cloud.redislabs.com',
+        port: 14399
+    }
+})
+
+redisClient.connect().then(()=>console.log("Connected to Redis")).catch(console.error)
+
+
+
 
 const app = express()
 
