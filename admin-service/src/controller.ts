@@ -13,6 +13,8 @@ interface AuthenticatedRequest extends Request {
 }
 
 export const addAlbum = TryCatch(async (req: AuthenticatedRequest, res) => {
+  console.log("1. Request received");
+  console.log("User:", req.user);
   if (req.user?.role !== "admin") {
     res.status(401).json({
       message: "You are not admin",
