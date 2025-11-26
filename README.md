@@ -19,6 +19,8 @@
     - `"start": "node dist/index.js"` 👉 Runs the compiled JavaScript app from the dist folder in production.
     - `"dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\""` 👉 Runs TypeScript compiler in watch mode AND restarts the server automatically whenever files change.
 
+-   Set your `.env file` exactly similar to `.env.example` file & add the required details init.
+
 
 
 
@@ -43,7 +45,7 @@
 -   Redis setup:
     -   `npm i redis @types/redis`
     -   Follow the Redis config on `index.ts` file
-    -   Set your `.env file` exactly similar to `.env.example` file.
+    -   Set your `.env file` exactly similar to `.env.example` file & add the required details init.
 
 
 
@@ -65,4 +67,4 @@
 -   Redis setup:
     -   `npm i redis @types/redis`
     -   Follow the Redis config on `index.ts` file
-    -   Set your `.env file` exactly similar to `.env.example` file.
+    -   Set your `.env file` exactly similar to `.env.example` file & add the required details init.
