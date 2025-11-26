@@ -141,7 +141,8 @@ export const SongProvider: React.FC<SongProviderProps> = ({ children }) => {
   useEffect(() => {
     fetchSongs();
     fetchAlbums();
-  }, []);
+  }, []); 
+  
   return (
     <SongContext.Provider
       value={{
